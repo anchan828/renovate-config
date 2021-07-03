@@ -1,0 +1,34 @@
+{
+  "automerge": true,
+  "dependencyDashboard": true,
+  "extends": ["config:base"],
+  "major": {
+    "automerge": false
+  },
+  "packageRules": [
+    {
+      "groupName": "nestjs packages",
+      "matchPackagePatterns": ["^@nestjs"]
+    },
+    {
+      "groupName": "TypeScript definition packages",
+      "matchPackagePatterns": ["^@types/"]
+    },
+    {
+      "groupName": "lint packages",
+      "matchPackagePatterns": [
+        "^eslint",
+        "^@typescript-eslint",
+        "^prettier",
+        "^@commitlint",
+        "^husky",
+        "^lint-staged",
+        "^pinst"
+      ]
+    },
+    {
+      "groupName": "testing packages",
+      "matchPackagePatterns": ["^jest", "-jest", "supertest"]
+    }
+  ]
+}
