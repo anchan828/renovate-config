@@ -7,6 +7,10 @@
   },
   "packageRules": [
     {
+      "groupName": "@anchan828 packages",
+      "matchPackagePatterns": ["^@anchan828"]
+    },
+    {
       "groupName": "nestjs packages",
       "matchPackagePatterns": ["^@nestjs"]
     },
