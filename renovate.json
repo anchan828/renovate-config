@@ -11,6 +11,10 @@
       "matchPackagePatterns": ["^@nestjs"]
     },
     {
+      "groupName": "graphql packages",
+      "matchPackagePatterns": ["^graphql"]
+    },
+    {
       "groupName": "TypeScript definition packages",
       "matchPackagePatterns": ["^@types/"]
     },
