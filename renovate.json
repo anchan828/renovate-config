@@ -11,8 +11,8 @@
       "matchPackagePatterns": ["^@anchan828"]
     },
     {
-      "groupName": "nestjs packages",
-      "matchPackagePatterns": ["^@nestjs"]
+      "groupName": "nestjs packages (fastify)",
+      "matchPackagePatterns": ["^@nestjs", "@fastify", "fastify"]
     },
     {
       "groupName": "graphql packages",
