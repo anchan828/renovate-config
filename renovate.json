@@ -38,5 +38,6 @@
       "groupName": "testing packages",
       "matchPackagePatterns": ["^jest", "-jest", "supertest"]
     }
-  ]
+  ],
+  "ignorePresets": ["workarounds:typesNodeVersioning"]
 }
