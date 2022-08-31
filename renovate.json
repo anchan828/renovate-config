@@ -19,10 +19,6 @@
       "matchPackagePatterns": ["^graphql"]
     },
     {
-      "groupName": "TypeScript definition packages",
-      "matchPackagePatterns": ["^@types/"]
-    },
-    {
       "groupName": "lint packages",
       "matchPackagePatterns": [
         "^eslint",
@@ -36,8 +32,12 @@
     },
     {
       "groupName": "testing packages",
-      "matchPackagePatterns": ["^jest", "-jest", "supertest"]
-    }
+      "matchPackagePatterns": ["^jest", "-jest", "supertest", "@types/jest"]
+    },
+    {
+      "groupName": "TypeScript definition packages",
+      "matchPackagePatterns": ["^@types/"]
+    },
   ],
   "ignorePresets": ["workarounds:typesNodeVersioning"]
 }
