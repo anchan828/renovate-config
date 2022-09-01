@@ -1,43 +1,48 @@
 {
-  "automerge": true,
-  "dependencyDashboard": true,
-  "extends": ["config:base"],
-  "major": {
-    "automerge": false
-  },
-  "packageRules": [
-    {
-      "groupName": "@anchan828 packages",
-      "matchPackagePatterns": ["^@anchan828"]
-    },
-    {
-      "groupName": "nestjs packages (fastify)",
-      "matchPackagePatterns": ["^@nestjs", "@fastify", "fastify"]
-    },
-    {
-      "groupName": "graphql packages",
-      "matchPackagePatterns": ["^graphql"]
-    },
-    {
-      "groupName": "lint packages",
-      "matchPackagePatterns": [
-        "^eslint",
-        "^@typescript-eslint",
-        "^prettier",
-        "^@commitlint",
-        "^husky",
-        "^lint-staged",
-        "^pinst"
-      ]
-    },
-    {
-      "groupName": "TypeScript definition packages",
-      "matchPackagePatterns": ["^@types/"]
-    },
-    {
-      "groupName": "testing packages",
-      "matchPackagePatterns": ["^jest", "-jest", "supertest", "@types/jest"]
+  "default": {
+    "extends": ["config:base", ":timezone(Asia/Tokyo)"],
+    "npm": {
+      "automerge": true,
+      "dependencyDashboard": true,
+      "major": {
+        "automerge": false
+      },
+      "rangeStrategy": "bump",
+      "packageRules": [
+        {
+          "groupName": "@anchan828 packages",
+          "matchPackagePatterns": ["^@anchan828"]
+        },
+        {
+          "groupName": "nestjs packages (fastify)",
+          "matchPackagePatterns": ["^@nestjs", "@fastify", "fastify"]
+        },
+        {
+          "groupName": "graphql packages",
+          "matchPackagePatterns": ["^graphql"]
+        },
+        {
+          "groupName": "lint packages",
+          "matchPackagePatterns": [
+            "^eslint",
+            "^@typescript-eslint",
+            "^prettier",
+            "^@commitlint",
+            "^husky",
+            "^lint-staged",
+            "^pinst"
+          ]
+        },
+        {
+          "groupName": "TypeScript definition packages",
+          "matchPackagePatterns": ["^@types/"]
+        },
+        {
+          "groupName": "testing packages",
+          "matchPackagePatterns": ["^jest", "-jest", "supertest", "@types/jest"]
+        }
+      ],
+      "ignorePresets": ["workarounds:typesNodeVersioning"]
     }
-  ],
-  "ignorePresets": ["workarounds:typesNodeVersioning"]
+  }
 }
