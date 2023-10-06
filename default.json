@@ -10,6 +10,12 @@
   },
   "packageRules": [
     {
+      "matchDatasources": [
+        "docker"
+      ],
+      "groupName": "Docker images"
+    },
+    {
       "matchUpdateTypes": [
         "major"
       ],
@@ -17,15 +23,11 @@
     },
     {
       "matchDepTypes": [
-        "dependencies"
-      ],
-      "groupName": "dependencies"
-    },
-    {
-      "matchDepTypes": [
+        "dependencies",
+        "peerDependencies",
         "devDependencies"
       ],
-      "groupName": "devDependencies"
+      "groupName": "All dependencies"
     }
   ]
 }
