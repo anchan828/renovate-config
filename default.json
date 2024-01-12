@@ -23,7 +23,7 @@
     },
     {
       "groupName": "reflect-metadata",
-      "matchPackagePatterns": ["reflect-metadata"]
+      "matchPackagePatterns": ["^reflect-metadata"]
     },
     {
       "matchDepTypes": [
