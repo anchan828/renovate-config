@@ -22,16 +22,16 @@
       "groupName": "majorPackages"
     },
     {
-      "groupName": "reflect-metadata",
-      "matchPackagePatterns": ["^reflect-metadata"]
-    },
-    {
       "matchDepTypes": [
         "dependencies",
         "peerDependencies",
         "devDependencies"
       ],
       "groupName": "All dependencies"
+    },
+    {
+      "groupName": "reflect-metadata",
+      "matchPackagePatterns": ["^reflect-metadata"]
     }
   ]
 }
