@@ -30,8 +30,8 @@
       "groupName": "All dependencies"
     },
     {
-      "groupName": "reflect-metadata",
-      "matchPackagePatterns": ["^reflect-metadata"]
+      "groupName": "eslint",
+      "matchPackagePatterns": ["^eslint", "^@eslint"]
     }
   ]
 }
