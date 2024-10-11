@@ -2,16 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":timezone(Asia/Tokyo)"],
   "automerge": true,
-  "autoApprove": true,
   "dependencyDashboard": true,
   "vulnerabilityAlerts": {
     "enabled": true,
-    "automerge": true,
-    "autoApprove": true
+    "automerge": true
   },
   "major": {
-    "automerge": false,
-    "autoApprove": false
+    "automerge": false
   },
   "rangeStrategy": "bump",
   "packageRules": [
