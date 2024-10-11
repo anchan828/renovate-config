@@ -10,7 +10,6 @@
   "major": {
     "automerge": false
   },
-  "rangeStrategy": "bump",
   "packageRules": [
     {
       "groupName": "@anchan828 packages",
