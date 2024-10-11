@@ -45,5 +45,7 @@
       "matchPackagePatterns": ["^jest", "-jest", "supertest", "@types/jest"]
     }
   ],
+  "minimumReleaseAge": "3 days",
+  "lockFileMaintenance": { "enabled": true },
   "ignorePresets": ["workarounds:typesNodeVersioning"]
 }
