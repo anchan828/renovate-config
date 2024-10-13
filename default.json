@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":timezone(Asia/Tokyo)"],
+  "extends": ["config:base", ":label(dependencies)", ":timezone(Asia/Tokyo)"],
   "automerge": true,
   "dependencyDashboard": true,
   "vulnerabilityAlerts": {
